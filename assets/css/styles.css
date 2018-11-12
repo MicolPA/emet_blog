@@ -1,0 +1,120 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+
+.menu{
+	width: 100%;
+	background: #00aeff;
+	color: white;
+}
+
+.menu ul li{
+	display: inline-block;
+	padding: 5px;
+}
+
+.menu ul{
+	margin: auto; 	
+}
+
+.pt-1{
+	padding-top: 10px;
+}
+.pt-2{
+	padding-top: 20px;
+}
+.pt-3{
+	padding-top: 30px;
+}
+.pt-4{
+	padding-top: 40px;
+}
+.pt-5{
+	padding-top: 50px;
+}
+
+.p-1{
+	padding: 10px;
+}
+.p-2{
+	padding: 20px;
+}
+.p-3{
+	padding: 30px;
+}
+.p-4{
+	padding: 40px;
+}
+
+
+
+.mt-1{
+	margin-top: 10px;
+}
+.mt-2{
+	margin-top: 20px;
+}
+.mt-3{
+	margin-top: 30px;
+}
+.mt-4{
+	margin-top: 40px;
+}
+.mt-5{
+	margin-top: 50px;
+}
+
+.m-1{
+	margin: 10px;
+}
+.m-2{
+	margin: 20px;
+}
+.m-3{
+	margin: 30px;
+}
+.m-4{
+	margin: 40px;
+}
+
+.textShadow{
+
+  	text-shadow: 2px 2px 4px #000;
+}
+
+	.primeraPlanaDivs{
+		color: white;
+		background-repeat: no-repeat;
+		position: relative;
+	}
+
+	.primeraPlanaDivs a{
+		background: rgba(195, 195, 195, 0.3);
+		position: absolute;
+		bottom:5px;
+    	left:10px;
+    	font-size: 18px;
+	}
+
+	.primeraPlanaDivs a:hover{
+		text-decoration: none;
+	}
+
+	.link-articles{
+		color: black;
+		text-decoration: none;
+	}
+
+	.link-articles:hover{
+		color: black;
+		text-decoration: none;
+
+	}
+
+	.divNews:hover{
+		box-shadow:2px 2px 5px 2px #999;
+		-webkit-box-shadow:2px 2px 5px 2px #999;
+		-moz-box-shadow:2px 2px 5px 2px #999;
+	}
+
