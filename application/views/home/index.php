@@ -59,13 +59,14 @@
                 <div class="container">
                         <form method="POST">
                             <div class="container">
-                                <div class="input-field col l12 m12 s12">
-                                    <input id="email" type="email" class="validate">
-                                    <label for="email">Email</label>
-                                </div>
-                                <button class="btn btn-small waves-effect green" type="submit" name="action">Enviar
-                                        <i class="material-icons right">send</i>
-                                </button>
+                                <form method="POST" action="<?php echo base_url('home/newsletter') ?>">
+                                    <div class="input-field col l12 m12 s12">
+                                        <input id="email" name="email" type="email" class="validate">
+                                        <label for="email">Email</label>
+                                    </div>
+                                    <input type="submit" class="btn btn-small waves-effect green" value="Enviar">
+                                    
+                                </form>
                             </div>
                         </form>
                 </div>

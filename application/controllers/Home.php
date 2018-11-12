@@ -41,6 +41,16 @@ class home extends CI_Controller {
 	}
 
 
+	public function newsletter(){
+
+		//$email = $_POST['email'];
+		//$this->db->insert('newsletter', $email);
+		//redirect(base_url('home'));
+
+
+	}
+
+
 
 }
 ?>
