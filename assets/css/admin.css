@@ -1,0 +1,82 @@
+body{
+    background: linear-gradient(to top right, #ffcccc 0%, #9999ff 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin:0;
+    padding: 0;
+}
+.post{
+    background-color:white;
+    height: 200px;
+    margin:10px;
+    text-align: center;
+
+}
+.articulos{
+    background-color:white;
+    height: 200px;
+    margin:10px;
+    text-align: center;
+
+}
+.banners{
+    background-color:white;
+    height: 200px;
+    margin:10px;
+    text-align: center;
+}
+.agregar{
+    margin-top:200px;
+}
+.ver_icon{
+    font-size: 10px;
+}
+.add_icon{
+    font-size: 70px;
+    color:green;
+    margin-top:20px;
+
+}
+.add_p{
+    font-size: 20px;
+    font-weight: bold;
+    color:black;
+    margin-top:60px;
+    font-family: 'Acme', sans-serif;
+}
+.welcome{
+    font-size: 20px;
+    font-weight: bold;
+    color:black;
+    margin-left:30px;
+    font-family: 'Acme', sans-serif;
+
+
+}
+#icon1{ color:#6FD7F7;}
+#icon2{ color:#FAA4D5;}
+#icon3{ color:#F0EA59;}
+.navside{
+    background-color:white;
+    margin-left: 30px;
+
+}
+.home, .email,.user{
+    margin:20px;
+    text-align: center;
+    
+}
+.icon_sidenav{
+    font-size: 35px;
+}
+h3{
+    font-size: 50px;
+    font-weight: bold;
+    color:white;
+    margin-left:30px;
+    font-family: 'Acme', sans-serif;
+    text-align: center;
+}
+.botones{
+    margin-top:70px;
+}

@@ -20,42 +20,17 @@
                 <h5>Artículos populares con este asunto</h5>
                     <div class="row pt-2">
                         
-                        <div class="col l3 s12 m3">
-                            <div class="post_relacionados">
-                                <a href="https://marketingdecontenidos.com/investigacion-de-marketing-y-de-mercados/">
-                                    <img width="100%" src="<?php echo base_url('assets/images/a.jpg') ?>">
-                                    <br>
-                                    <p>Lets take some shots!</p>
-                                </a>
+                        <?php foreach ($displayLatest as $datos): ?>
+                            <div class="col l3 s12 m3">
+                                <div class="post_relacionados">
+                                    <a href="<?php echo base_url('home/noticia/') . $datos->url . '?id=' . $datos->id ?>">
+                                        <img width="100%" src="<?php echo base_url('assets/images/') . $datos->imagen ?>">
+                                        <br>
+                                        <p><?php echo $datos->title ?></p>
+                                    </a>
+                                </div>
                             </div>
-                        </div>
-                        <div class="col l3 s12 m3">
-                            <div class="post_relacionados">
-                                <a href="https://marketingdecontenidos.com/investigacion-de-marketing-y-de-mercados/">
-                                    <img width="100%" src="<?php echo base_url('assets/images/a.jpg') ?>">
-                                    <br>
-                                    <p>Lets take some shots!</p>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col l3 s12 m3">
-                            <div class="post_relacionados">
-                                <a href="https://marketingdecontenidos.com/investigacion-de-marketing-y-de-mercados/">
-                                    <img width="100%" src="<?php echo base_url('assets/images/a.jpg') ?>">
-                                    <br>
-                                    <p>Lets take some shots!</p>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col l3 s12 m3">
-                            <div class="post_relacionados">
-                                <a href="https://marketingdecontenidos.com/investigacion-de-marketing-y-de-mercados/">
-                                    <img width="100%" src="<?php echo base_url('assets/images/a.jpg') ?>">
-                                    <br>
-                                    <p>Lets take some shots!</p>
-                                </a>
-                            </div>
-                        </div>
+                        <?php endforeach ?>
                         
                     </div><!--fin row-->
                 <div class="section_fb">

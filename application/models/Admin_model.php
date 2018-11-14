@@ -3,8 +3,8 @@
 class admin_model extends CI_Model{
 
 
-	public function displayHome(){
-		$query = $this->db->query('SELECT * FROM news order by id DESC LIMIT 8');
+	public function displayHome($limit){
+		$query = $this->db->query("SELECT * FROM news order by id DESC LIMIT $limit");
 
 		return $query->result();
 	}

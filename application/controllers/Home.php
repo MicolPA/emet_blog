@@ -15,13 +15,14 @@ class home extends CI_Controller {
 	{
 		$data['view'] = 'home/index';
 		$data['title'] = 'Inicio';
-		$data['displayHome'] = $this->admin_model->displayHome();
+		$data['displayHome'] = $this->admin_model->displayHome(8);
 		$this->load->view('home/template', $data);
 	}
 
 	function noticia($url){
 
 		$data['view'] = 'home/noticia';
+		$data['displayLatest'] = $this->admin_model->displayHome(4);
 		
 		if ($_GET['id']) {
 			$id = $_GET['id'];
@@ -51,6 +52,11 @@ class home extends CI_Controller {
 		redirect(base_url('home#newsletter'));
 
 
+	}
+
+	public function pruebas(){
+		$data['view'] = 'home/pruebas';
+		$this->load->view('home/pruebas');
 	}
 
 
