@@ -4,7 +4,7 @@ class admin_model extends CI_Model{
 
 
 	public function displayHome(){
-		$query = $this->db->query('SELECT * FROM news order by id DESC LIMIT 3');
+		$query = $this->db->query('SELECT * FROM news order by id DESC LIMIT 8');
 
 		return $query->result();
 	}

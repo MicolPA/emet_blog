@@ -1,3 +1,8 @@
+<div class="carousel carousel carousel-slider">
+        <a class="carousel-item" href="#one!"><img src="<?php echo base_url('assets/images/3907.jpg') ?>"></a>
+        <a class="carousel-item" href="#two!"><img src="<?php echo base_url('assets/images/789.jpg') ?>"></a>
+    </div>
+
 <div class="content">
         <div class="container">
             <div class="descrip">
@@ -52,21 +57,20 @@
             </div> <!-- Fin div contenedor Articulos-->
         </div>
     </div>
-    <div class="col l12 s12 m12">
+    <div class="col l12 s12 m12" id="newsletter">
             <div class="emails center">
                 <h5>¿Quieres recibir más contenidos brillantes como este?</h5>
                 <p></p>¡Regístrate para recibir nuestros contenidos por email y sé un miembro del Marketing de Contenidos</p>
                 <div class="container">
-                        <form method="POST">
+                        <form method="POST" action="<?php echo base_url('Home/newsletter/') ?>">
                             <div class="container">
-                                <form method="POST" action="<?php echo base_url('home/newsletter') ?>">
-                                    <div class="input-field col l12 m12 s12">
-                                        <input id="email" name="email" type="email" class="validate">
-                                        <label for="email">Email</label>
-                                    </div>
-                                    <input type="submit" class="btn btn-small waves-effect green" value="Enviar">
-                                    
-                                </form>
+                                <div class="input-field col l12 m12 s12">
+                                    <input id="email" name="email" type="email" class="validate">
+                                    <label for="email">Email</label>
+                                </div>
+                                <button class="btn btn-small waves-effect green" type="submit" name="action">Enviar
+                                        <i class="material-icons right">send</i>
+                                </button>
                             </div>
                         </form>
                 </div>

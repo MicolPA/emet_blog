@@ -34,6 +34,9 @@ class home extends CI_Controller {
 			$data['latestNews'] = $this->admin_model->latestNews();
 			$data['title'] = $data['readNew'][0]->title;
 			$data['imagen'] = $data['readNew'][0]->imagen;
+			$data['content'] = $data['readNew'][0]->content;
+			$data['author'] = $data['readNew'][0]->author;
+			
 			$this->load->view('home/template', $data);
 		} else {
 			redirect(base_url());
@@ -43,9 +46,9 @@ class home extends CI_Controller {
 
 	public function newsletter(){
 
-		//$email = $_POST['email'];
-		//$this->db->insert('newsletter', $email);
-		//redirect(base_url('home'));
+		$email = array('email' => $_POST['email']);
+		$this->db->insert('newsletter', $email);
+		redirect(base_url('home#newsletter'));
 
 
 	}

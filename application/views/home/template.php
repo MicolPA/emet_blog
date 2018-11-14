@@ -5,16 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title><?php echo $title ?> | Emet</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="<?php echo base_url('assets/css/materialize.css') ?>" />
     <link rel="stylesheet" href="<?php echo base_url('assets/css/main.css') ?>" />
+    <link rel="stylesheet" href="<?php echo base_url('assets/css/estilos-g.css') ?>" />
 </head>
 <body>
     <nav>
         <div class="nav-wrapper">
-        <a href="#" class="brand-logo center">Estimulatubebe.com</a>
+        <a href="<?php echo base_url() ?>" class="brand-logo center">Estimulatubebe.com</a>
         <ul id="nav-mobile" class="left hide-on-med-and-down">
                 <li><a><i class="fab fa-facebook-f  fa-sm"></i></a></li>
                 <li><a><i class="fab fa-twitter fa-sm"></i></a></li>
@@ -25,7 +25,8 @@
     </nav>
     <div class="container center div_logo">
         <div class="container center">
-                <img class="img center" src="<?php echo base_url('assets/images/estimula.png') ?>">
+            <a href="<?php echo base_url() ?>"><img class="img center" src="<?php echo base_url('assets/images/estimula.png') ?>"></a>
+                
         </div>
         
     </div>
@@ -50,10 +51,7 @@
             </div>
         </div>
     </nav>
-    <div class="carousel carousel-slider">
-        <a class="carousel-item" href="#one!"><img src="<?php echo base_url('assets/images/3907.jpg') ?>"></a>
-        <a class="carousel-item" href="#two!"><img src="<?php echo base_url('assets/images/789.jpg') ?>"></a>
-    </div>
+        
      
 
     <?php $this->load->view($view); ?>
@@ -85,7 +83,7 @@
             </div>
             <div class="footer-copyright">
                 <div class="container">
-                        Copyright © 2018 Marketing de Contenidos. Todos los derechos reservados
+                        <p class="black-text">Copyright © 2018 EMET. Todos los derechos reservados</p>
                 </div>
             </div>
     </footer>
@@ -95,8 +93,3 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
 <script src="<?php echo base_url('assets/js/main.js') ?>"></script>
 </html>
-<script>
-
-  
-</script>
-
